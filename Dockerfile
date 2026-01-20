@@ -31,7 +31,7 @@ RUN useradd --create-home --shell /bin/bash appuser && \
 USER appuser
 
 # Expose port
-EXPOSE 15000
+EXPOSE 8080
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
